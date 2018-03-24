@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Learn JavaScript!</title>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 </head>
+
 <body>
-<!--1 задание "Внешние скрипты"-->
-<script src="../scripts/index.js" async></script>
-<!--Что загрузится быстрее?-->
-<script src="../scripts/big.js"></script> <!--Быстрее из-за последовательности скриптов-->
-<script src="../scripts/small.js"></script>
-<!--А вот так?-->
-<script async src="../scripts/big.js"></script>
-<script async src="../scripts/small.js"></script><!--Так как он меньше загрузится должен быстрее-->
-<!--А так?-->
-<script defer src="../scripts/big.js"></script><!--Сохраняется порядок-->
-<script defer src="../scripts/small.js"></script>
-<!--Переменные и константы-->
-<script src="../scripts/VarAndConst.js"></script>
+    <div id="root"></div>s
+    <script type="text/babel">
+        ReactDOM.render(
+        <h1>Hello, World!</h1>, document.getElementById('root') );
+    </script>
+    <!--Быстрее из-за последовательности скриптов-->
+
 </body>
+
 </html>
+``
